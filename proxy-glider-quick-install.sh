@@ -232,7 +232,6 @@ function Set_Password(){
 
 function InitNode() {
     log "配置 Proxy glider Service"
-    rm -rf /root/glider/
     git clone -b main  --depth=1 https://github.com/hanglegehang/chatgpt-proxy-glider-deploy.git chatgpt-proxy-glider
     cd chatgpt-proxy-glider
 

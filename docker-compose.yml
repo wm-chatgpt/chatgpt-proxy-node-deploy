@@ -4,7 +4,7 @@ services:
     image: nadoo/glider
     volumes:
       - ./glider.conf:/etc/glider/glider.conf
-    command: -config /etc/glider/glider.conf
+    command: -config /etc/glider/glider.conf -verbose
     ports:
       - "8443:8443"
     restart: unless-stopped
