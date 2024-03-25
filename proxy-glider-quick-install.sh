@@ -240,7 +240,7 @@ function InitNode() {
     rm -rf $RUN_BASE_DIR/*
     cp ./docker-compose.yml $RUN_BASE_DIR
     sed -i "s/8443:8443/$PANEL_PORT:8443/g" $RUN_BASE_DIR/docker-compose.yml
-    echo listen=$PANEL_USERNAME:$PANEL_PASSWORD@:$PANEL_PORT > $RUN_BASE_DIR/glider.conf
+    echo listen=$PANEL_USERNAME:$PANEL_PASSWORD@:8443 > $RUN_BASE_DIR/glider.conf
 
     cd $RUN_BASE_DIR
     docker compose pull
