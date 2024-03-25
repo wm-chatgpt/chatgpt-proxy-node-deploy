@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  glider:
+    image: nadoo/glider
+    volumes:
+      - ./glider.conf:/etc/glider/glider.conf
+    command: -config /etc/glider/glider.conf
+    ports:
+      - "8441:8443"
+    restart: unless-stopped
+    labels:
+      - "com.centurylinklabs.watchtower.scope=hanglegehang-chatgpt-proxy-glider"
