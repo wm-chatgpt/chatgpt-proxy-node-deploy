@@ -213,8 +213,7 @@ function Set_Password(){
     DEFAULT_PASSWORD=`cat /dev/urandom | head -n 16 | md5sum | head -c 10`
 
     while true; do
-        echo "设置 glider 代理密码（默认为$DEFAULT_PASSWORD）："
-        read PANEL_PASSWORD
+        read -p "设置 glider 代理密码（默认为$DEFAULT_PASSWORD）：" PANEL_PASSWORD
 
         if [[ "$PANEL_PASSWORD" == "" ]];then
             PANEL_PASSWORD=$DEFAULT_PASSWORD
