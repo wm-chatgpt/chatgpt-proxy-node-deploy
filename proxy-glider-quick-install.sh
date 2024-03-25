@@ -7,7 +7,7 @@ CURRENT_DIR=$(
 
 function log() {
     message="[Proxy Log]: $1 "
-    echo -e "${message}" 2>&1 | tee -a ${CURRENT_DIR}/install.log
+    echo -e "${message}" 2>&1 | tee -a ${CURRENT_DIR}/glider-install.log
 }
 
 
