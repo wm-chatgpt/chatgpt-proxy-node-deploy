@@ -223,7 +223,7 @@ function Set_Password(){
             echo "错误：密码仅支持字母、数字、特殊字符（!@#$%*_,.?），长度 8-30 位"
             continue
         fi
-
+        log "您设置的密码为：$PANEL_PASSWORD"
         break
     done
 }
