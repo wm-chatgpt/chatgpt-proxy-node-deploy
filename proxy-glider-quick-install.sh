@@ -274,7 +274,7 @@ function Show_Result(){
     log ""
     log "=================感谢您的耐心等待，安装已经完成=================="
     log ""
-    log "代理地址：socks://$PANEL_USERNAME:$PANEL_PASSWORD@:$PANEL_PORT"
+    log "代理地址：socks://$PANEL_USERNAME:$PANEL_PASSWORD@$PUBLIC_IP:$PANEL_PORT"
     log ""
     log "如果使用的是云服务器，请至安全组开放 $PANEL_PORT 端口"
     log ""
