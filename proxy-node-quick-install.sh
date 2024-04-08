@@ -232,10 +232,10 @@ function Set_Password(){
 
 function InitNode() {
     log "配置 Proxy glider Service"
-    git clone -b main  --depth=1 https://github.com/hanglegehang/chatgpt-proxy-glider-deploy.git chatgpt-proxy-glider
-    cd chatgpt-proxy-glider
+    git clone -b main  --depth=1 https://github.com/wm-chatgpt/chatgpt-proxy-node-deploy.git chatgpt-proxy-node
+    cd chatgpt-proxy-v
 
-    RUN_BASE_DIR=/opt/chatgpt-proxy-glider
+    RUN_BASE_DIR=/opt/chatgpt-proxy-node
     mkdir -p $RUN_BASE_DIR
     rm -rf $RUN_BASE_DIR/*
     cp ./docker-compose.yml $RUN_BASE_DIR
