@@ -214,7 +214,7 @@ function Set_Password(){
 
     while true; do
         read -p "设置 glider 代理密码（默认为$DEFAULT_PASSWORD）：" PANEL_PASSWORD
-
+	
         if [[ "$PANEL_PASSWORD" == "" ]];then
             PANEL_PASSWORD=$DEFAULT_PASSWORD
         fi
@@ -233,7 +233,7 @@ function Set_Password(){
 function InitNode() {
     log "配置 Proxy glider Service"
     git clone -b main  --depth=1 https://github.com/wm-chatgpt/chatgpt-proxy-node-deploy.git chatgpt-proxy-node
-    cd chatgpt-proxy-v
+    cd chatgpt-proxy-node
 
     RUN_BASE_DIR=/opt/chatgpt-proxy-node
     mkdir -p $RUN_BASE_DIR
